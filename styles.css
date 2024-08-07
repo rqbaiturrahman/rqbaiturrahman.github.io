@@ -1,0 +1,304 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.logo img {
+  height: 50px;
+  display: block;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.slider {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 2s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.profile {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile h2 {
+  margin-bottom: 20px;
+  color: green;
+}
+
+.profile p {
+  line-height: 1.6;
+}
+
+.advantages {
+  padding: 20px;
+  text-align: center;
+}
+
+.advantages h2 {
+  margin-bottom: 20px;
+  color: green;
+}
+
+.advantages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.advantages li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.fasilitas {
+  padding: 20px;
+  text-align: center;
+}
+
+.fasilitas h2 {
+  margin-bottom: 20px;
+  color: green;
+}
+
+.fasilitas ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fasilitas li {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.maps {
+  padding: 20px;
+  text-align: center;
+}
+
+.maps h2 {
+  color: green;
+}
+
+.maps iframe {
+  width: 80%;
+  height: 450px;
+  border: 0;
+}
+
+.cta {
+  text-align: center;
+  margin: 20px 0;
+}
+
+@keyframes blink {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: grey;
+  }
+  100% {
+    background-color: #4caf50;
+  }
+}
+
+.cta button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 1s;
+  animation: blink 2s infinite; /* Tambahkan animasi blink */
+}
+
+.cta button:hover {
+  background-color: green;
+}
+
+.social-media {
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media h2 {
+  margin-bottom: 20px;
+  color: green;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.partner-logos {
+  padding: 20px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.partner-logos h2 {
+  margin-bottom: 20px;
+  color: green;
+}
+
+.partner-logos .logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.partner-logos .logos img {
+  width: 80px;
+  height: auto;
+}
+
+.logopkt {
+  padding: 20px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.logopkt .logo-pkt img {
+  width: 170px;
+  height: 37px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4caf50;
+  color: white;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid white;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-text h1 {
+    font-size: 1.2em;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .slider {
+    width: 70%;
+  }
+
+  .maps iframe {
+    width: 90%;
+    height: 350px;
+  }
+
+  .social-icons a img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .partner-logos .logos img {
+    width: 80px;
+    background-color: whitesmoke;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text h1 {
+    font-size: 1em;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .slider {
+    width: 90%;
+  }
+
+  .profile p {
+    font-size: 0.9em;
+  }
+
+  .maps iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .social-icons a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .partner-logos .logos img {
+    width: 60px;
+  }
+
+  .logopkt .logo-pkt img {
+    width: 140px;
+    height: 25px;
+  }
+}
+
